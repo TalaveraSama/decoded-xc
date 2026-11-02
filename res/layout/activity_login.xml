@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_bg" android:background="@drawable/login" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|top" android:id="@id/img_login_logo" android:background="@drawable/logo" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="15.0dip" android:alpha="0.99" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="350.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textColor="#ffeee8e8" android:gravity="center" android:id="@id/txt_panel_selected_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="XTREAM CODES COMPATIBLE API" android:fontFamily="@font/quicksand_bold" />
+        <FrameLayout android:id="@id/layout_portal_url" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip">
+            <EditText android:textColor="@color/cardview_dark_background" android:id="@id/ed_server" android:background="#ffffffff" android:paddingLeft="60.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="https or http://server:port" android:ems="10" android:inputType="textPersonName" />
+            <ImageView android:id="@id/img_server_logo" android:background="@drawable/server_icon" android:focusable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_username_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip">
+            <EditText android:textColor="@color/cardview_dark_background" android:id="@id/ed_username" android:background="@drawable/xciptv_ed" android:paddingLeft="60.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/xc_username" android:ems="10" android:inputType="textFilter|textPostalAddress|textWebEmailAddress|textWebPassword|textNoSuggestions" />
+            <ImageView android:id="@id/imageView19" android:background="@drawable/username_icon" android:focusable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_password_holder" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textColor="@color/cardview_dark_background" android:id="@id/ed_password" android:background="@drawable/xciptv_ed" android:paddingLeft="60.0dip" android:nextFocusLeft="@id/btn_login" android:nextFocusRight="@id/btn_login" android:nextFocusDown="@id/btn_login" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/xc_password" android:ems="10" android:password="true" android:inputType="textNoSuggestions|textPassword" android:nextFocusForward="@id/btn_login" />
+            <ImageView android:id="@id/imageView20" android:background="@drawable/password_icon" android:focusable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="20.0sp" android:id="@id/btn_select_panel" android:background="@drawable/btn_cat_settings" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:textSize="20.0sp" android:id="@id/btn_login" android:background="@drawable/btn" android:nextFocusLeft="@id/btn_select_panel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="Sign In" />
+        </LinearLayout>
+        <Button android:textSize="20.0sp" android:id="@id/btn_signup" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:text="Sign Up" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.nathnetwork.xciptv.ijkplayer.media.IjkVideoView android:id="@id/ijkplayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.nathnetwork.xciptv.ijkplayer.ui.TouchLayout android:id="@id/tl_touch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.nathnetwork.xciptv.ijkplayer.ui.ControlLayout android:id="@id/cl_control" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/flyt_thumbnail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_thumbnail_play" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/lib_player_ic_play" android:scaleType="centerCrop" />
+    </FrameLayout>
+</merge>

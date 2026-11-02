@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView14" android:background="@drawable/bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="#77000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <FrameLayout android:background="#33000000" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <Button android:layout_gravity="center|right" android:id="@id/btn_folder" android:background="@drawable/btn" android:layout_width="148.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:text="Select Location" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <Button android:id="@id/btn_my_recordings" android:background="@drawable/btn" android:layout_width="148.0dip" android:layout_height="50.0dip" android:text="My Recordings" />
+                <Button android:id="@id/btn_my_schedule" android:background="@drawable/btn" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="My Schedules" />
+                <Button android:id="@id/btn_add_schedule" android:background="@drawable/btn" android:layout_width="100.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="Add" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/listview_record" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

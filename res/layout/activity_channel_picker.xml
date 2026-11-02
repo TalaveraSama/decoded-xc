@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView16" android:background="@drawable/bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/layout_channel_selector" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="#48867f7f" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CATEGORY" android:layout_weight="0.33" android:fontFamily="@font/quicksand" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LIVE TV CHANNEL" android:layout_weight="0.33" android:fontFamily="@font/quicksand" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="#9f000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <ListView android:layout_gravity="center" android:id="@id/listViewCat" android:background="#ff222424" android:nextFocusLeft="@id/listViewChVod" android:nextFocusRight="@id/listViewChVod" android:nextFocusUp="@id/listViewCat" android:nextFocusDown="@id/listViewCat" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.33" />
+                <ListView android:id="@id/listViewChVod" android:nextFocusLeft="@id/listViewCat" android:nextFocusRight="@id/listViewCat" android:nextFocusUp="@id/listViewChVod" android:nextFocusDown="@id/listViewChVod" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.33" />
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="progressBarStyle" />
+    </FrameLayout>
+</FrameLayout>

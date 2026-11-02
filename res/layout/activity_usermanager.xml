@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView33" android:background="@drawable/bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="#ffdbe6fc" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/textView11" android:background="#55000000" android:paddingTop="10.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/xc_account_management" android:fontFamily="@font/quicksand_bold" />
+            <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <Button android:layout_gravity="center|right" android:id="@id/btn_m3u" android:background="@drawable/btn" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="20.0dip" android:text="+M3U" android:layout_weight="1.0" android:fontFamily="@font/quicksand_bold" />
+                <Button android:layout_gravity="center|right" android:id="@id/btn_ezserver" android:background="@drawable/btn" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="20.0dip" android:text="+EZServer" android:layout_weight="1.0" android:fontFamily="@font/quicksand_bold" />
+                <Button android:layout_gravity="center|right" android:id="@id/btn_add" android:background="@drawable/btn" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="20.0dip" android:text="+Xtream Codes" android:fontFamily="@font/quicksand_bold" />
+            </LinearLayout>
+        </FrameLayout>
+        <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="progressBarStyle" />
+</FrameLayout>
